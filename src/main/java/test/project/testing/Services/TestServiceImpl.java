@@ -5,7 +5,6 @@ import java.time.LocalDateTime;
 import org.springframework.stereotype.Service;
 
 import lombok.RequiredArgsConstructor;
-import test.project.testing.Dtos.TestDto;
 import test.project.testing.Dtos.TestResponseDto;
 
 @Service
@@ -13,7 +12,7 @@ import test.project.testing.Dtos.TestResponseDto;
 public class TestServiceImpl implements TestService{
     
     @Override
-    public TestResponseDto prueba(TestDto testDto) {
+    public TestResponseDto prueba() {
         return new TestResponseDto(
             "Prueba realizada",
             LocalDateTime.now().toString()
